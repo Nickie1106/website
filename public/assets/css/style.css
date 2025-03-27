@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+
+header {
+    background-color: lightblue;
+}
+
+
+
+header .nav-link:hover {
+    text-decoration: underline;
+    color: azure;
+}
+
+
+
+/* メイン背景画像 */
+.main-background {
+    background: url('/assets/images/Library.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+/* ジャンルセクション背景画像 */
+.genre-background {
+    position: relative;
+    background-image: url('/assets/images/Library2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* 高さをコンテンツに合わせる */
+    padding: 200px; /* セクション全体の余白 */
+    z-index: -1;
+    color: white; /* 背景画像に合わせて文字色を変更 */
+}
+
+.genre-content {
+    position: relative;
+    z-index: 1;
+    padding: 60px 20px;
+}
+
+.genre-background h3 {
+    margin-bottom: 50px; /* タイトルとボックス間の距離を広げる */
+    font-size: 2.5rem;
+    color: white; /* タイトルの文字サイズを調整 */
+}
+
+.genre-box {
+    border-radius: 20px;
+    transition: transform 0.3s;
+    background-color: rgba(255, 255, 255, 0.9); /* 半透明の白背景 */
+}
+
+.genre-box:hover {
+    transform: scale(1.05);
+}
+
+/* ジャンル内文字の色 */
+.genre-box h5 {
+    color: black; /* 文字を背景に合わせて黒に設定 */
+}
+
+.card-background {
+    background-image: url('/assets/images/cardback.jpg'); /* 背景画像 */
+    background-size: cover; /* 画像が要素全体をカバーする */
+    background-position: center; /* 画像を中央に配置 */
+    min-height: 100vh; /* 高さをコンテンツの増減に応じて調整 */
+    padding: 50px; /* 上下の余白 */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: black;
+}
+
+.card-background h3 {
+    margin-top: 100px;
+    margin-bottom: 50px; /* タイトルとボックス間の距離を広げる */
+    font-size: 2.5rem;
+    color: black;
+    text-align: center; /* タイトルの文字サイズを調整 */
+}
+
+/* 書籍カード */
+.book-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ページネーション */
+.pagination .page-link {
+    color: #007bff;
+}
+
+.pagination .page-link:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    .contact .main_form input,
+    .contact .main_form textarea {
+        width: 100%;
+    }
+}
